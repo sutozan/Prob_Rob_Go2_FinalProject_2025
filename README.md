@@ -45,7 +45,7 @@ This starts the simulated robot in the Gazebo environment. **To check if everyth
     ```
 2.  **Run the Launch File (No RVIZ):**
     ```bash
-    ros2 launch unitree_go2-ros2 gazebo.launch.py
+    ros2 launch go2_config gazebo.launch.py
     ```
 
 
