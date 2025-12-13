@@ -30,7 +30,7 @@ These instructions assume you are running **Ubuntu 22.04 with ROS 2 Humble** ins
 3.  **Build the Workspace:**
     ```bash
     colcon build --symlink-install
-    . <your_ws>/install/setup.bash
+    source install/setup.bash
     ```
 
 ## Step 2: Running the System
