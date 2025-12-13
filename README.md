@@ -13,7 +13,7 @@ These instructions assume you are running **Ubuntu 22.04 with ROS 2 Humble** ins
     ```bash
     mkdir -p ~/go2_ws/src
     cd ~/go2_ws/src
-    git clone [https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git](https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git) .
+    git clone https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git
     cd ..
     ```
 
