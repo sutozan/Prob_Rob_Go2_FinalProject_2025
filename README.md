@@ -4,7 +4,7 @@ This repository contains the full ROS 2 Humble workspace source code for the fin
 
 **Repository Link:** [https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git](https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git)
 
-## 🛠️ Step 1: System Setup and Build
+## Step 1: System Setup and Build
 
 These instructions assume you are running **Ubuntu 22.04 with ROS 2 Humble** installed.
 
