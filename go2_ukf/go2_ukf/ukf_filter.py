@@ -33,7 +33,7 @@ class UKF:
         ])
        
         self.Q = np.diag([
-            1e-2, 1e-2, 1e-2 # Very small noise for v_x, v_y, v_z measurement -> fine tunned
+            2e-2, 2e-2, 2e-2 # Very small noise for v_x, v_y, v_z measurement -> fine tunned
         ])
 
         self.gravity = np.array([0.0, 0.0, 9.81]) # Positive gravity for subtraction logic - its negative below so positive here

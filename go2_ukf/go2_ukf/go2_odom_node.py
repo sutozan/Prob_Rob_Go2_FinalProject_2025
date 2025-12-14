@@ -67,7 +67,8 @@ class Go2OdomNode(Node):
         # Continuing from above - we observed that we have to start the UKF at the right tilt. If it starts at a tilt
         # (which it does) the math interprets gravity as acceleration and our position calculation start accumulating even though the robot has not moved yet.
         # these codes each run only once and that is at the beginning
-        if not self.initialized_orientation:
+        # We commented out the orientation as it was causing fluctions - trade off to consider in our report.
+        """ if not self.initialized_orientation:
             ax = imu_msg.linear_acceleration.x
             ay = imu_msg.linear_acceleration.y
             az = imu_msg.linear_acceleration.z
@@ -82,7 +83,7 @@ class Go2OdomNode(Node):
 
             self.initialized_orientation = True #prevent from starting again
             self.get_logger().info(f"Initialized orientation R={roll:.3f}, P={pitch:.3f}")
-            return
+            return """
         
         if not self.initialized_pose:
             # repeat same process for the pose.
