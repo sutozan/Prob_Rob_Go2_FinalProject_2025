@@ -1,6 +1,6 @@
 # Unitree Go2 Simulator with Custom UKF Odometry
 
-This repository contains the full ROS 2 Humble workspace source code for the final project submission, including the Unitree Go2 simulator package and the custom Unscented Kalman Filter (UKF) odometry package (`go2_ukf`).
+This repository contains the full ROS 2 Humble workspace source code for the final project submission, including the Unitree Go2 simulator package and the custom Unscented Kalman Filter (UKF) odometry package (`go2_ukf/go2_ukf`).
 
 **Repository Link:** [https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git](https://github.com/sutozan/Prob_Rob_Go2_FinalProject_2025.git)
 
