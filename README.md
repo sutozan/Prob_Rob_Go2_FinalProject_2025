@@ -21,7 +21,6 @@ These instructions assume you are running **Ubuntu 22.04 with ROS 2 Humble** ins
     *This single command automatically installs ALL required packages (e.g., robot-localization, gazebo packages, and xacro) specified in the package manifest files.*
     ```bash
     sudo apt update
-    # Install the preferred DDS middleware for Unitree/ROS2 communication
     sudo apt install ros-humble-rmw-cyclonedds-cpp -y
     rosdep update
     rosdep install --from-paths src --ignore-src -r -y
@@ -47,6 +46,51 @@ This starts the simulated robot in the Gazebo environment. **To check if everyth
     ```bash
     ros2 launch go2_config gazebo.launch.py
     ```
+
+## Step 3: Running the UKF Odometry.
+
+### A. Launch the Gazebo Simulator (Terminal 1)
+
+Follow the commands above to start the simulator above. Note: If the simulator is not on, overall code will not be producing measurments.
+
+### B. Run Odometry Code (Terminal 2)
+This code is to run both the filter and the odometry. Since the filter is defined as a class, running the code below correclty is crucial.
+
+1.  **Source the environment:**
+    ```bash
+    source install/setup.bash
+    ```
+2.  **Run the Launch File**
+    ```bash
+    ros2 run go2_ukf ukf_odometry
+    ```
+
+### C. Run Evaluator (Terminal 3)
+To view the performance of the filter and all error messages, run the code below.
+
+1.  **Source the environment:**
+    ```bash
+    source install/setup.bash
+    ```
+2.  **Run the Launch File:**
+    ```bash
+    ros2 run go2_ukf evaluator
+    ```
+
+### D. Run Teleop (Terminal 4)
+To test the filter performance during movement, utilize the teleop feature to move the robot around. We suggets choosing linear motion.
+
+1.  **Source the environment:**
+    ```bash
+    source install/setup.bash
+    ```
+2.  **Run the Teleop:**
+    ```bash
+    ros2 run teleop_twist_keyboard teleop_twist_keyboard
+    ```
+
+
+
 
 
 
