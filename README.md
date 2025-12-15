@@ -49,8 +49,10 @@ This starts the simulated robot in the Gazebo environment. **To check if everyth
 
 ## Step 3: Running the UKF Odometry.
 
-Please run all the code in the order described below. Each one should run in its own terminal yet the start of each should be in the order given (A--> B --> C --> D)
-We recommend that you first source all of the terminals before running the actual code as it is important that everything runs in a timely manner. Delaying the start of the odom code relative to sim and vice verssa will prematurely cause error to accumulate and therefore artifically drift.
+Please run all the code in the order described below. Each one should run in its own terminal yet the start of each should be in the order given (A--> B --> C --> D).
+We recommend that you first source all of the terminals before running the actual code as it is important that everything runs in a timely manner. Delaying the start of the odom code relative to sim and vice versa will prematurely cause error to accumulate especially in yaw and therefore artifically drift.
+
+All code can be run from: ~/go2_ws
 
 ### A. Launch the Gazebo Simulator (Terminal 1)
 
@@ -81,7 +83,7 @@ This code is to run both the filter and the odometry. Since the filter is define
     ```
 
 ### D. Run Teleop (Terminal 4)
-To test the filter performance during movement, utilize the teleop feature to move the robot around. We suggets choosing linear motion.
+To test the filter performance during movement, utilize the teleop feature to move the robot around. We suggets choosing linear motion (Press I)
 
 1.  **Source the environment:**
     ```bash
