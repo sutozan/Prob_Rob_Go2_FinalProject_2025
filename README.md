@@ -50,6 +50,7 @@ This starts the simulated robot in the Gazebo environment. **To check if everyth
 ## Step 3: Running the UKF Odometry.
 
 Please run all the code in the order described below. Each one should run in its own terminal yet the start of each should be in the order given (A--> B --> C --> D)
+We recommend that you first source all of the terminals before running the actual code as it is important that everything runs in a timely manner. Delaying the start of the odom code relative to sim and vice verssa will prematurely cause error to accumulate and therefore artifically drift.
 
 ### A. Launch the Gazebo Simulator (Terminal 1)
 
