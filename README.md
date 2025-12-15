@@ -83,7 +83,7 @@ This code is to run both the filter and the odometry. Since the filter is define
     ```
 
 ### D. Run Teleop (Terminal 4)
-To test the filter performance during movement, utilize the teleop feature to move the robot around. We suggets choosing linear motion (Press I)
+To test the filter performance during movement, utilize the teleop feature to move the robot around. We suggets choosing linear motion (Press I).
 
 1.  **Source the environment:**
     ```bash
